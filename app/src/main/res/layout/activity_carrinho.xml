@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="danielfnz.com.br.ecommerce.activity.CarrinhoActivity">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleViewCarrinho"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/relativeLayoutBuscarProduto" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBuscarProduto"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <Button
+            android:id="@+id/botaoConcluirCompra"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="CONCLUIR"
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:onClick="concluirCompra"/>
+
+        <TextView
+            android:id="@+id/textItensCarrinho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 itens"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="16dp"
+            />
+
+        <TextView
+            android:id="@+id/textTotalCarrinho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: R$ 0,00"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="danielfnz.com.br.ecommerce.fragment.CompraProdutoDescricaoFragment"
+    android:padding="16dp"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="valor unitario: "
+            />
+
+        <TextView
+            android:id="@+id/precoProdutoDetalhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="R$ 2,99"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/botaoDiminuir1Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textStyle="bold"
+            android:minHeight="30dp"
+            android:minWidth="35dp"
+            android:textSize="30sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editQuantidadeDeItens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:minWidth="70dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/edit_text_border"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_gravity="center_vertical"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:id="@+id/botaoAumentar1Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textStyle="bold"
+            android:minHeight="30dp"
+            android:minWidth="35dp"
+            android:textSize="30sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="Valor Total"/>
+
+    <TextView
+        android:id="@+id/valorTotalProdutoDetalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:text="R$2,99"
+        android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/adicionarProdutoNoCarrinho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:text="ADICIONAR NO CARRINHO"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

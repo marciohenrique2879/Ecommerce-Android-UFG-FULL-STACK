@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "851365562002",
+    "firebase_url": "https://ecomerce-baf6b.firebaseio.com",
+    "project_id": "ecomerce-baf6b",
+    "storage_bucket": "ecomerce-baf6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851365562002:android:f50688ed63b6bf6e",
+        "android_client_info": {
+          "package_name": "danielfnz.com.br.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851365562002-dg3q9drvnlt4nvbe14rldkhlnda6nlcu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "danielfnz.com.br.ecommerce",
+            "certificate_hash": "d1b213e6a6ef5067d28661877b7f31b6f8af1091"
+          }
+        },
+        {
+          "client_id": "851365562002-s0s94o8his0ne156mvf13qm0eodanqdf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbAE3AV9w1o9JaI01zQEQ1vvgFzhitW-4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851365562002-s0s94o8his0ne156mvf13qm0eodanqdf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
